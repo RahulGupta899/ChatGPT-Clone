@@ -21,6 +21,7 @@ app.get('/', async(req,res)=>{
 
 app.post('/',async(req,res)=>{
     try{
+        console.log(process.env.OPENAI_API_KEY)
         const prompt = req.body.prompt;
         const response = await opeai.createCompletion({
             model: 'code-davinci-002',
