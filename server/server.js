@@ -31,6 +31,7 @@ app.post('/',async(req,res)=>{
             frequency_penalty: 0.5,
             presence_penalty: 0
         }) 
+        console.log(response)
         res.json({
             bot: response.data.choices[0].text
         }) 
