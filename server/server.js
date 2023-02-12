@@ -48,5 +48,6 @@ app.post('/',async(req,res)=>{
 
 app.listen(5000, ()=>{
     console.log('SERVER IS RUNNING ON PORT http://localhost:5000')
+    console.log("KEY: ",process.env.OPENAI_API_KEY)
 })
 
